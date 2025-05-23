@@ -11,7 +11,7 @@
 4. **앙상블 분류기** - 패턴매칭 + BioBERT 결합
 
 ## 📊 주요 성과
-- **최종 분류 정확도 97% 이상(2025년5월20일현재)** 달성
+- **최종 분류 정확도 98% 이상(2025년5월20일현재)** 달성
 - 다양한 접근법 비교 분석 완료
 - 의료 텍스트 분류 방법론 확립
 
@@ -60,12 +60,16 @@ The research explores multiple approaches to medical text classification, from t
 
 ## 📊 Key Achievements
 
-- ✅ **Final Classification Accuracy: 97%+ (as of May 20, 2025)**
-- ✅ Comprehensive comparative analysis of multiple NLP approaches
-- ✅ Established robust medical text classification methodology
-- ✅ Validated ensemble approach for improved performance
-- ✅ Demonstrated effectiveness of domain-specific pre-trained models
-
+- ✅ **Final Classification Accuracy: 98.3%** (15 errors out of 886 cases)
+- ✅ **Initial Pattern Matching Baseline: ~70%** accuracy
+- ✅ Progressive improvement through iterative model development
+- ✅ **Final Distribution Analysis:**
+  - PCL (Pancreatic Cystic Lesion): 436 cases (49.2%)
+  - Non-PCL: 373 cases (42.1%) 
+  - Uncertain: 77 cases (8.7%)
+- ✅ **Zone Classification:**
+  - Standard zone: 809 cases (91.3%)
+  - Uncertain zone: 77 cases (8.7%)
 ## 🏗️ Repository Structure
 
 ```
@@ -102,15 +106,16 @@ Medical-Text-Classification-BioBERT/
 - **Precision/Recall**: Class-specific performance metrics
 - **F1-Score**: Balanced performance measurement
 - **Computational Efficiency**: Processing time and resource usage
+  
+## 🔬 Development Journey
 
 ## 📈 Performance Metrics
 
-| Model | Accuracy | Precision | Recall | F1-Score |
-|-------|----------|-----------|--------|----------|
-| Pattern Matching | 85.2% | 84.1% | 83.7% | 83.9% |
-| Lexicon-Based | 87.6% | 86.9% | 87.2% | 87.0% |
-| BioBERT | 94.8% | 94.2% | 94.5% | 94.3% |
-| **Ensemble** | **97.1%** | **96.8%** | **96.9%** | **96.8%** |
+| Model | Accuracy | Precision | Recall | F1-Score | Notes |
+|-------|----------|-----------|--------|----------|-------|
+| Pattern Matching (Initial) | ~70% | - | - | - | Baseline approach |
+| **BioBERT Classifier** | **79.4%** | **79.5%** | **79.4%** | **79.4%** | Single model performance |
+| **Final Ensemble Model** | **98.3%** | - | - | - | **Production system (15/886 errors)** |
 
 ## 🛠 Technical Requirements
 
