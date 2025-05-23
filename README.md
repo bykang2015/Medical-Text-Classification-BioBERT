@@ -1,4 +1,3 @@
-# Medical-Text-Classification-BioBERT
 # Medical Text Classification using BioBERT
 
 ## 🎯 프로젝트 개요
