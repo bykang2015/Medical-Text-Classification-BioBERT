@@ -216,9 +216,9 @@ print(f"Confidence: {confidence:.2f}")
 
 For research collaboration, technical questions, or clinical applications:
 
-**Principal Investigator**: [Your Name]  
-**Email**: [your-email@domain.com]  
-**Institution**: [Your Institution]  
+**Principal Investigator**: Boyoung Kang 
+**Email**: bykang2015@gmail.com
+**Institution**: SKKU
 **Research Focus**: Medical NLP, Healthcare AI, Clinical Text Mining
 
 ## 📄 Citation
